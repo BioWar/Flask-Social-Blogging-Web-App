@@ -18,6 +18,7 @@ class Config:
     FLASKY_FOLLOWERS_PER_PAGE = 50
     FLASKY_COMMENTS_PER_PAGE = 30
     WTF_CSRF_ENABLED = False
+    SSL_REDIRECT = False
 
     @staticmethod
     def init_app(app):
