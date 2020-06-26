@@ -8,8 +8,8 @@ from wtforms import ValidationError
 from ..models import Role, User
 
 
-class NameForm(FlaskForm):
-    name = StringField('What is your name?', validators=[DataRequired()])
+class CommentForm(FlaskForm):
+    body = StringField('Enter your comment', validators=[DataRequired()])
     submit = SubmitField('Submit')
 
 class EditProfileForm(FlaskForm):
